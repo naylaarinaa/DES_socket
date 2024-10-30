@@ -10,8 +10,7 @@ def client_program():
     client_socket.connect((host, port))  # connect to the server
     print(f"Connected to server at {host}:{port}\n")
 
-    key_string = "fairnaan"  # Hardcoded key on the client side
-
+    key_string = "ABCD1234"  # Hardcoded key on the client side
     def encrypt_message(message):
         des.reset_state()
         des.initialize_key(key_string)

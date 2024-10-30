@@ -11,7 +11,7 @@ def server_program():
     server_socket.listen(1)  # Configure how many clients the server can listen simultaneously
     print(f"Server listening on {host}:{port}...")
 
-    key_string = "fairnaan"  # Hardcoded key on the server side
+    key_string = "ABCD1234"  # Hardcoded key on the server side
 
     def encrypt_message(message):
         des.reset_state()
